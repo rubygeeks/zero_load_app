@@ -1,0 +1,49 @@
+run the current app in folder"config.ru" in passenger either with apache or passenger
+
+run test with ab to test apache+passenger performance
+
+ab -n 1000 -c 10 -v 4 url_with_port
+ab -n 1000 -c 10 -v 4 http://127.0.0.1:8080/
+
+-v would dump all requests and responses
+
+
+
+
+sample output on macbook with passenger standalone
+Server Software:        nginx/0.8.53
+Server Hostname:        127.0.0.1
+Server Port:            3001
+
+Document Path:          /
+Document Length:        54 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.528 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      260000 bytes
+HTML transferred:       54000 bytes
+Requests per second:    1894.07 [#/sec] (mean)
+Time per request:       5.280 [ms] (mean)
+Time per request:       0.528 [ms] (mean, across all concurrent requests)
+Transfer rate:          480.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.6      0       7
+Processing:     1    5   4.5      4     117
+Waiting:        0    5   4.5      4     117
+Total:          1    5   4.5      4     117
+
+Percentage of the requests served within a certain time (ms)
+  50%      4
+  66%      5
+  75%      5
+  80%      6
+  90%      8
+  95%     10
+  98%     13
+  99%     19
+ 100%    117 (longest request)

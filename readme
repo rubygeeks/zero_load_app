@@ -1,0 +1,10 @@
+when load testing you need to test the whole environment for capacity and performance
+
+performance bottlenecks are related to specific components used for the deployment
+
+we had a performance issue with a large client project, it was a in premise app and we found it difficult to benchmark it so we built many tools to measure and monitor performance
+
+
+rack_passnger tests a simple rack app with passenger
+
+rails_passenger tests a simple rails app with passenger(no db is used)

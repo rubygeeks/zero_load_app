@@ -1,0 +1,38 @@
+
+sample output on macbook with passenger standalone with rails 3
+Server Software:        nginx/0.8.53
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /
+Document Length:        54 bytes
+
+Concurrency Level:      10
+Time taken for tests:   16.497 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      415000 bytes
+HTML transferred:       54000 bytes
+Requests per second:    60.62 [#/sec] (mean)
+Time per request:       164.970 [ms] (mean)
+Time per request:       16.497 [ms] (mean, across all concurrent requests)
+Transfer rate:          24.57 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      11
+Processing:    34  164 101.2    132     802
+Waiting:       34  164 101.2    132     802
+Total:         34  164 101.3    132     802
+
+Percentage of the requests served within a certain time (ms)
+  50%    132
+  66%    152
+  75%    176
+  80%    196
+  90%    353
+  95%    397
+  98%    438
+  99%    481
+ 100%    802 (longest request)
